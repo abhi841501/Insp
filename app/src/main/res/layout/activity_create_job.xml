@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmployerActivity.CreateJobActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center_vertical"
+                    android:text="Create Job"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/backArrowCJob"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeCategory"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/background_border"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint=" Job Category"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    app:tint="@color/skyBlue" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeProfile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/background_border"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <EditText
+                    android:id="@+id/jobProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="Job Profile"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    app:tint="@color/skyBlue" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearHrEmp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/salaryrange">
+
+                    <EditText
+                        android:id="@+id/hrText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Hourly Rate"
+                        android:background="@null"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:inputType="number"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDrEmp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/salaryrange">
+
+
+                    <EditText
+                        android:id="@+id/drText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Daily Rate"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearStartTimeEmp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/salaryrange">
+
+                    <TextView
+                        android:id="@+id/startDateEmp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Start Date "
+                        android:background="@null"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearEndTimeEmp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/salaryrange">
+
+                    <TextView
+                        android:id="@+id/endDateEmp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="End Date"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:background="@drawable/background_border"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <EditText
+                    android:id="@+id/jobDescriptionTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:hint="we are looking a passionate android developer having 4 months of
+experience"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="textWebEmailAddress"
+                    android:textColor="@color/black"/>
+
+</LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/createBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/black_button_background"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
